@@ -1,0 +1,13 @@
+2026/06/16
+ 8 
+ 0 
+ 2 
+flight.DEG
+
+ONLY THE FIRST 5 LINES ARE READ. COMMENTS MAY BE PLACED AFTER LINE 5
+
+Line 1: datum letu yyyy/mm/dd  (0000/00/00 = pouzij datum ze souboru)
+Line 2: hodina UTC startu letu
+Line 3: castice (0 = vsechny / total)
+Line 4: typ davky (2 = mikroSv, efektivni davka ICRP Pub. 103)
+Line 5: vstupni soubor (*.DEG = trasa letu ve stupnich/minutach)

@@ -1,0 +1,15 @@
+# CARI-7 binárka a datové soubory (rozbalit z cari_7exe.zip)
+simulation_cari/CARI_7_DVD/
+
+# Generované soubory simulace
+simulation_cari/flight.DEG
+simulation_cari/flight.DAT
+simulation_cari/flight.SUM
+simulation_cari/CARI-7.RPT
+
+# Výstupní grafy
+simulation_cari/cari7_*.png
+
+# Python
+__pycache__/
+*.pyc
