@@ -16,10 +16,10 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
 # ── Cesty ────────────────────────────────────────────────────────────────────
-DAT_FILE = Path("flight.DAT")
+DAT_FILE = Path("output/flight.DAT")
 DEG_FILE = Path("flight.DEG")
-OUT_PNG  = Path("cari7_results.png")
-OUT_PNG2 = Path("cari7_dose_vs_alt.png")
+OUT_PNG  = Path("output/cari7_results.png")
+OUT_PNG2 = Path("output/cari7_dose_vs_alt.png")
 
 FEET_TO_M = 0.3048
 # ─────────────────────────────────────────────────────────────────────────────

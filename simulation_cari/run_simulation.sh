@@ -35,13 +35,14 @@ echo "=== 3/3  Spouštím CARI-7 ==="
 chmod +x "$BINARY"
 (cd "$CARI_DIR" && "$BINARY")
 
-# ── Zkopírování výsledků zpět ────────────────────────────────────────────────
-cp "$CARI_DIR/flight.SUM" "$SCRIPT_DIR/flight.SUM"
-cp "$CARI_DIR/flight.DAT" "$SCRIPT_DIR/flight.DAT"
+# ── Zkopírování výsledků do output/ ───────────────────────────────────────
+mkdir -p "$SCRIPT_DIR/output"
+cp "$CARI_DIR/flight.SUM" "$SCRIPT_DIR/output/flight.SUM"
+cp "$CARI_DIR/flight.DAT" "$SCRIPT_DIR/output/flight.DAT"
 
 echo ""
-echo "Hotovo. Výsledky:"
+echo "Hotovo. Výsledky v simulation_cari/output/:"
 echo "  flight.SUM  – celková dávka"
 echo "  flight.DAT  – dávkový příkon po krocích"
 echo ""
-grep "TOTAL" "$SCRIPT_DIR/flight.SUM" | tail -1
+grep "TOTAL" "$SCRIPT_DIR/output/flight.SUM" | tail -1
