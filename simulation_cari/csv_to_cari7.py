@@ -18,7 +18,8 @@ from pathlib import Path
 # ── Konfigurace ─────────────────────────────────────────────────────────────
 INPUT_CSV    = Path("../data/flight_trajectory.csv")
 OUTPUT_DEG   = Path("flight.DEG")
-FLIGHT_DATE  = "06/2026"      # MM/YYYY – datum letu pro CARI-7
+FLIGHT_DATE  = "06/2026"      # MM/YYYY – datum letu (hlavička DEG)
+FLIGHT_DATE_ISO = "2026/06/14" # yyyy/mm/dd – pro DEFAULT.INP
 FLIGHT_NAME  = "flight_trajectory"
 SAMPLE_HZ    = 1 / 1.5        # interval vzorkování GPS = 1.5 s
 MAX_WAYPOINTS = 200           # max. počet waypointů ve výstupním souboru
@@ -165,7 +166,7 @@ def main():
     print(f"  Délka letu:    {total_time:.1f} min")
     print(f"  Max. výška:    {max_alt_m:.0f} m  ({max_alt_m * METERS_TO_FEET:.0f} ft)")
     print(f"\nNastavení DEFAULT.INP pro tento let:")
-    print(f"  Řádek 1 (datum): {FLIGHT_DATE.replace('/', '/20')[:7]}  → použij 0000/00/00 pro datum ze souboru")
+    print(f"  Řádek 1 (datum): {FLIGHT_DATE_ISO}")
     print(f"  Řádek 5 (soubor): {OUTPUT_DEG.name}")
 
 
