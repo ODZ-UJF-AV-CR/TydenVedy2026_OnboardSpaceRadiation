@@ -5,9 +5,6 @@ simulation_cari/CARI_7_DVD/
 simulation_cari/flight.DEG
 simulation_cari/CARI-7.RPT
 
-# Výstupní složka (výsledky CARI-7 + grafy)
-simulation_cari/output/
-
 # Python
 __pycache__/
 *.pyc
