@@ -116,7 +116,7 @@ def main():
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10, 7), sharex=True,
                                    gridspec_kw={'height_ratios': [2, 1]})
     fig.suptitle(
-        f"CARI-7  |  Let 16. 6. 2026, 10:00 SELČ  |  Celková dávka: {total_final*1000:.2f} nSv",
+        f"CARI-7  |  Let 14. 6. 2026  |  Celková dávka: {total_final*1000:.2f} nSv",
         fontsize=13, fontweight='bold'
     )
 
@@ -190,7 +190,7 @@ def main():
     ax.set_xlabel('Dávkový příkon [nSv/h]', fontsize=11)
     ax.set_ylabel('Výška [m n.m.]', fontsize=11)
     ax.set_title('Závislost dávkového příkonu na výšce\n'
-                 'CARI-7  |  Let 16. 6. 2026', fontsize=12, fontweight='bold')
+                 'CARI-7  |  Let 14. 6. 2026', fontsize=12, fontweight='bold')
     ax.legend(fontsize=9)
     ax.grid(True, alpha=0.3)
     ax.yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, _: f'{x:,.0f}'))
